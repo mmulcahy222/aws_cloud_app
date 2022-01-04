@@ -12,4 +12,6 @@ I did a Cron Job as a Python Script that would check if the script was running w
 
 I had some severe problems with the CronJob for a while, then I discovered that people should NOT use the squiggly line/symbol as "Home" inside the cron entry through "crontab -e" (or /etc/cron.d), but rather the FULL path retrieved from "pwd" without the ~ symbol. I learned hours the hard way.
 
+The star of the show is the "Screen" application in Linux, that was what I used. Screen allows processes to start when there is no active SSH connection going! According to the internet, "Screen or GNU Screen is a terminal multiplexer. In other words, it means that you can start a screen session and then open any number of windows (virtual terminals) inside that session. Processes running in Screen will continue to run when their window is not visible even if you get disconnected"
+
 I'll describe more about this in the future, or you can ask me!
