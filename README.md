@@ -10,6 +10,6 @@ Despite this setup, I detected that sometimes the script inside called "Cloud.py
 
 I did a Cron Job as a Python Script that would check if the script was running with "ps -a", and if it wasn't, then start it, and if multiple copies were running, then remove the processes except for one.
 
-I had some severe problems with the CronJob for a while, then I discovered that people should NOT use the squiggly line/symbol as "Home" inside the cron entry through "crontab -e" (or /etc/cron.d). I learned hours the hard way.
+I had some severe problems with the CronJob for a while, then I discovered that people should NOT use the squiggly line/symbol as "Home" inside the cron entry through "crontab -e" (or /etc/cron.d), but rather the FULL path retrieved from "pwd" without the ~ symbol. I learned hours the hard way.
 
 I'll describe more about this in the future, or you can ask me!
